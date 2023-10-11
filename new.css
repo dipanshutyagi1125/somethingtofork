@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  width: 1180px;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-collage img {
+  width: 10rem;
+  height: 16rem;
+}
+
+.image-collage {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+.image-collage .first {
+  display: grid;
+  position: relative;
+  row-gap: 10px;
+  top: 30px;
+}
+.image-collage .second {
+  display: grid;
+  position: relative;
+  row-gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    row-gap: 40px;
+  }
+}
